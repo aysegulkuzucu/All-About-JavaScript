@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>İnternet Teknolojileri Dersi</title>
+	<link rel="stylesheet" href="../css/style.css" />
+</head>
+<body onscroll="test()">
+    
+	<div class="ust"> 
+	<h2>Bil3106 Internet Teknolojileri: FrontEnd Development</h2>
+	<p>UZAKTAN EĞİTİM 1. HAFTA</p>
+	</div>
+	
+	
+	<div id="menu"> 
+		<a href="../index.html">JavaScript Giriş</a>
+        <a href="jssyntax.html">JavaScript Yazılım (Syntax) yapısı</a>
+        <a href="degiskenler.html">Değişkenler</a>
+        <a href="operatorler.html">Operatörler</a>
+        <a href="aritmetik.html">Aritmetik</a>
+        <a href="veritipleri.html">Veri Tipleri</a>
+        <a href="fonksiyon.html">Fonsiyon Yapısı</a>
+        <a href="olaylar.html">Olaylar</a>
+        <a href="stringler.html">Stringler, Sayılar, Diziler ve Dizi İşlemleri</a>
+        <a href="ifkosul.html">İf Koşul Yapıları</a>
+        <a href="donguler.html">Döngüler</a>
+        <a class="aktif" href="tipdonusum.html">Tip Dönüşümleri</a>
+		<a href="mimari.html">Çalışma Yapısı ve Genel Mimarisi</a>
+		<a href="fonksiyonkullanimi.html">Fonksiyon Kullanımı</a>
+        <a href="objectmodel.html">JS Object ( Nesne) Modeli ve Kullanımı</a>
+        <a href="jsdom.html">JS DOM Kullanım</a>
+        <a href="hw2_examples/adamasmaca.html">ADAM ASMACA</a>
+        <a href="hw2_examples/kullaniciformu.html">KULLANICI FORMU</a>
+        <a href="hw2_examples/alisverislistesi.html">ALIŞVERİŞ LİSTESİ</a>
+	
+	</div>
+	
+	<div  class="icerik"> 
+
+		<header>
+			<h2>Tip Dönüşümleri</h2>
+			<span class="byline">JavaScript için tip ya da tür dönüşümleri diyebilirsiniz, kendisi gerçekleştirir gibi bir ifade kullanmıştım. Bu aslında çok da iyi bir şey değildir, çünkü bir takım karışıklıklara neden olur. Örneğin aşağıdaki kodları inceleyelim :</span>
+		</header>
+		<style>
+			p.a{
+				font-style: italic;
+				font-size: 50px;
+				color:rgb(209, 47, 18)
+			}
+			p.d{
+				font-style: normal;
+				font-size: 30px;
+				color:rgb(21, 133, 17)
+			}
+			p.b{
+				font-style: normal;
+				font-size: 30px;
+				color:rgb(19, 91, 173)
+			}
+		</style>
+		<a href="#" class="image full"><img src="../images/pics115.jpg" alt=""></a>
+		<p class="b">Bu kod bloğu sonucu ekranda şu yazar. Sonuç 1 : 6 Sonuç 2 : 33</p>
+		<p class="b">Birinci sonuç 6 iken ikincisi 33 tür. Bunun nedeni ilkinde ikisini number olarak kabul etti, sayısal toplama yaptı. İkincisinde ise string olarak kabul etti ve string toplama yaptı. İşte karşışıklık bu noktada başlıyor. İleride çok kompleks işlemler yaptığınızı düşünün, işi JavaScripte bırakacak değilsiniz elbette. 🙂</p>
+		<p class="b">İşte bunu engelleyebilmek için tip dönüşümlerine ihtiyaç duyarız.</p>
+		<p class="b"><strong>Number tipleri String tipine çevirmek : </strong>Bu işlemi gerçekleştirebilmek için toString() metodunu kullanırız. Böylelikle sayı olarak verilen değeri string tipine çevirebiliriz.</p>
+		<a href="#" class="image full"><img src="../images/pics116.jpg" alt=""></a>
+		<p class="b">Sonuç olarak ekrana 33 yazılır. Örnekte görüldüğü üzere parantez içinde sayısal değer verdim, bunu toString() metodu ile stringe çevirdim. Birde alternatif olarak string değeri “3” şeklinde değilde String(3) şeklinde yazıp ikisini topladım. Sonuç olarak 33 elde edildi.</p>
+		<p class="b">toString metodunun çeşitli kullanım şekilleri mevcuttur. Aşağıdaki tabloda bu açıklamaları görebilirsiniz :</p>
+		<a href="#" class="image full"><img src="../images/pics117.jpg" alt=""></a>
+		<p class="b"><strong>String tipleri Number tiplere dönüştürmek : </strong>String tipleri sayı tiplere dönüştürmek içinde Number fonksiyonunu kullanmaktayız.</p>
+		<a href="#" class="image full"><img src="../images/pics118.jpg" alt=""></a>
+		<p class="b">Sonuç olarak 6 yazar. Çünkü string 3 değerlerini Number yaptık ve 3+3 işlemini sayısal olarak gerçekleştirdik. String tipleri Number tipe dönüştürmek için 3 tip mevcuttur.</p>
+		<a href="#" class="image full"><img src="../images/pics119.jpg" alt=""></a>
+
+	</div>
+	
+<script type="text/javascript" src="../js/ayar.js"></script>
+</body>
+</html>

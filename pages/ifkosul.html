@@ -1,0 +1,101 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>İnternet Teknolojileri Dersi</title>
+	<link rel="stylesheet" href="../css/style.css" />
+</head>
+<body onscroll="test()">
+    
+	<div class="ust"> 
+	<h2>Bil3106 Internet Teknolojileri: FrontEnd Development</h2>
+	<p>UZAKTAN EĞİTİM 1. HAFTA</p>
+	</div>
+	
+	
+	<div id="menu"> 
+		<a href="../index.html">JavaScript Giriş</a>
+		<a href="jssyntax.html">JavaScript Yazılım (Syntax) yapısı</a>
+		<a href="degiskenler.html">Değişkenler</a>
+		<a href="operatorler.html">Operatörler</a>
+		<a href="aritmetik.html">Aritmetik</a>
+		<a href="veritipleri.html">Veri Tipleri</a>
+		<a href="fonksiyon.html">Fonksiyon Yapısı</a>
+		<a href="olaylar.html">Olaylar</a>
+		<a href="stringler.html">Stringler, Sayılar, Diziler ve Diziİşlemleri</a>
+		<a class="aktif" href="ifkosul.html">İf Koşul Yapıları</a>
+		<a href="donguler.html">Döngüler</a>
+		<a href="tipdonusum.html">Tip Dönüşümleri</a>
+		<a href="mimari.html">Çalışma Yapısı ve Genel Mimarisi</a>
+		<a href="fonksiyonkullanimi.html">Fonksiyon Kullanımı</a>
+        <a href="objectmodel.html">JS Object ( Nesne) Modeli ve Kullanımı</a>
+        <a href="jsdom.html">JS DOM Kullanım</a>
+        <a href="hw2_examples/adamasmaca.html">ADAM ASMACA</a>
+        <a href="hw2_examples/kullaniciformu.html">KULLANICI FORMU</a>
+        <a href="hw2_examples/alisverislistesi.html">ALIŞVERİŞ LİSTESİ</a>
+
+	</div>
+	
+	<div  class="icerik"> 
+	
+		<header>
+			<h2> If Koşul Yapıları</h2>
+		</header>
+		<style>
+		p.a{
+			font-style: normal;
+			font-size: 50px;
+			color:rgb(180, 30, 92)
+		}
+		p.b{
+			font-style: normal;
+			font-size: 30px;
+			color:rgb(143, 85, 10)
+		}
+	</style>
+	<p class="a">-Koşullar</p>
+	<p class="b">Koşullar birer karar yapılarıdır. Şarta bağlı bir komutu yerine getirmek istiyorsak koşul ifadelerini kullanmalıyız. Ayrıca unutmayın ki koşul ifadeleri boolean tipi verilerde çalışır. Yani bir ifade ya doğrudur ya da yanlıştır mantığı ile komutları yerine getirirler.</p>
+	<p class="a">-if else Koşulu</p>
+	<p class="b">if else koşulunun çalışma prensibi bu şekildedir.</p>
+	<a href="#" class="image full"><img src="../images/pics83.jpg" alt=""></a>
+	<p class="b">Şimdi basit bir örnek yapalım...</p>
+	<a href="#" class="image full"><img src="../images/pics84.jpg" alt=""></a>
+	<p class="b">tuttugumSayi adında bir değişken tanımladım ve değerini "7" verdim. Kodlarımı çalıştırdığımda aşağıdaki gibi bir pencere açılacak ve kullanıcıya sorumu soracağım. Kullanıcını vereceği cevap kullaniciSayisi adlı değişkenimin değeri olacak. Eğer tuttugumSayi ile kullanıcının gireceği sayı birbirine eşitse if kısmındaki, değilse else kısmındaki kodlar çalışacak.</p>
+	<a href="#" class="image full"><img src="../images/pics85.jpg" alt=""></a>
+	<p class="b">Kodlarımı çalıştırdığımda karşıma bu şekilde bir pencere gelecek. Yanıt olarak 6 yazıyorum ve OK'a tıklıyorum.</p>
+	<a href="#" class="image full"><img src="../images/pics86.jpg" alt=""></a>
+	<p class="b">Kodlarım doğru bir şekilde çalışıyor. Burada dikkatimizi çeken bir fonksiyon var. O da promt( ) metodu. Sizin de anlayacağınız gibi bu metod tarayıcıda veri girişi kutucuğunun açılmasını sağlıyor. İki parametreli. İlk parametre kutucuk bilgisi. İkincisi ise veri girişi için.</p>
+	<p class="a">-else if Koşulu</p>
+	<p class="b">if else koşulu ile aynıdır. Tek farkı birden fazla false durumunda çalışacak koşulların eklenebilmesidir.</p>
+	<a href="#" class="image full"><img src="../images/pics87.jpg" alt=""></a>
+	<p class="b">Bir önceki örneğimizi biraz geliştirelim.</p>
+	<a href="#" class="image full"><img src="../images/pics88.jpg" alt=""></a>
+	<p class="b">Bu sefer kullanıcının girdiği sayının tuttuğumuz sayıdan büyük ya da küçük olmamasına bakıyoruz. Bunun için else if koşullarını kullanıyoruz.</p>
+	<a href="#" class="image full"><img src="../images/pics89.jpg" alt=""></a>
+	<p class="b">Bu sefer "3" değerini giriyorum.</p>
+	<a href="#" class="image full"><img src="../images/pics90.jpg" alt=""></a>
+	<p class="b">Çıktım ise bu şekilde olacaktır. Kodlarım doğru bir şekilde çalışıyor.</p>
+	<p class="b">Son olarak belirtmeliyim ki, else if koşullarından sonra else koşulunu kodlarımıza ekleyebiliriz. Bu şekilde bir kullanımı da vardır.</p>
+	<p class="a">-switch Koşulu</p>
+	<p class="b">else if ile çok benzerdir. Aralarında iki önemli fark vardır. switch koşulunda sınırlamalar bellidir. Örneğin; haftanın yedi gününden birini seçmek istiyorsak switch koşulu kullanmalıyız. İkinci fark ise switch koşulu, else if koşulundan daha hızlı tepki verir. switch koşulu içerisine yazılan herhangi bir koşul sağlandığında break deyimi ile çıktı alınırken else if'te tüm koşullar okunmaktadır.</p>
+	<a href="#" class="image full"><img src="../images/pics91.jpg" alt=""></a>
+	<p class="b">Bu şekilde bir kod yapısı vardır. Şimdi bunu örnek üzerinde görelim.</p>
+	<a href="#" class="image full"><img src="../images/pics92.jpg" alt=""></a>
+	<p class="b">Kullanıcıdan bir sayı aldım ve bu sayı bulunana kadar oluşacak durumları yazdım. Eğer "6" değerini girdiyse 6ncı case'e kadar kodlarımı okuyacak ve break deyimi ile belirttiğim uyarıyı verecek.</p>
+	<a href="#" class="image full"><img src="../images/pics93.jpg" alt=""></a>
+	<p class="b">Tekrar "6" değerini girdim.</p>
+	<a href="#" class="image full"><img src="../images/pics94.jpg" alt=""></a>
+	<p class="b">Bu sefer çıktımız bu şekilde olacaktır. Diğer koşulları denediğimde de doğru sonuçlar aldım. Kodlarımız düzgün bir şekilde çalışıyor.</p>
+	<p class="a">- ternary if Koşulu</p>
+	<p class="b">Bu koşul üçleme koşulu olarak da bilinir. jQuery'deki toggle'ın altyapısıdır. Aç - kapa, kapa - aç mantığı vardır.</p>
+	<a href="#" class="image full"><img src="../images/pics95.jpg" alt=""></a>
+	<p class="b">Şeklinde basit bir algoratiması vardır. Şimdi bu algoritmayı basit bir örnek ile açıklayalım.</p>
+	<a href="#" class="image full"><img src="../images/pics96.jpg" alt=""></a>
+	<p class="b">Burada kullanıcı bir sayı girecek ve bu sayı 7'ye eşitse "Doğru" yazan, değilse "Yanlış" yazan bir uyarı penceresi açılacak.</p>
+	<p class="b">Görüldüğü üzere ternary if koşulunun kullanımı oldukça basittir.</p>
+
+	</div>
+	
+<script type="text/javascript" src="ayar.js"></script>
+</body>
+</html>

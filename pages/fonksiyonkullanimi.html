@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>İnternet Teknolojileri Dersi</title>
+	<link rel="stylesheet" href="../css/style.css" />
+</head>
+<body onscroll="test()">
+    
+	<div class="ust"> 
+	<h2>Bil3106 Internet Teknolojileri: FrontEnd Development</h2>
+	<p>UZAKTAN EĞİTİM 2. HAFTA</p>
+	</div>
+	
+	
+	<div id="menu"> 
+	    <a href="../index.html">JavaScript Giriş</a>
+        <a href="jssyntax.html">JavaScript Yazılım (Syntax) yapısı</a>
+        <a href="degiskenler.html">Değişkenler</a>
+        <a href="operatorler.html">Operatörler</a>
+        <a href="aritmetik.html">Aritmetik</a>
+        <a href="veritipleri.html">Veri Tipleri</a>
+        <a href="fonksiyon.html">Fonsiyon Yapısı</a>
+        <a href="olaylar.html">Olaylar</a>
+        <a href="stringler.html">Stringler, Sayılar, Diziler ve Dizi İşlemleri</a>
+        <a href="ifkosul.html">İf Koşul Yapıları</a>
+        <a href="donguler.html">Döngüler</a>
+        <a href="tipdonusum.html">Tip Dönüşümleri</a>
+        <a href="mimari.html">Çalışma Yapısı ve Genel Mimarisi</a>
+        <a class="aktif" href="fonksiyonkullanimi.html">Fonksiyon Kullanımı</a>
+        <a href="objectmodel.html">JS Object ( Nesne) Modeli ve Kullanımı</a>
+        <a href="jsdom.html">JS DOM Kullanım</a>
+        <a href="hw2_examples/adamasmaca.html">ADAM ASMACA</a>
+        <a href="hw2_examples/kullaniciformu.html">KULLANICI FORMU</a>
+        <a href="hw2_examples/alisverislistesi.html">ALIŞVERİŞ LİSTESİ</a>
+	
+	</div>
+	
+	<div  class="icerik"> 
+
+		<header>
+			<h2>JavaScript Fonksiyon Kullanımı</h2>
+		</header>
+
+		<style>
+			
+        	p.a{
+				font-style: normal;
+				font-size: 30px;
+				color:rgb(27, 145, 3)
+				}
+			p.b{
+				font-style: normal;
+				font-size: 20px;
+				color:rgb(173, 19, 91)
+                }
+            p.c{
+                font-style: normal;
+                font-family: initial;
+				font-size: 20px;
+                color:rgb(14, 89, 158)         
+				}
+		</style>
+
+		<p class="a">Fonksiyonlar belirli bir görevi yerine getirmek için tasarlanmış kod bloklarıdır. Hazırlanan fonksiyonlar çağrıldığında yürütülerek istenen görev gerçekleştirilir.</p>
+		<a href="#" class="image full"><img src="../images/19.jpg" alt=""></a>
+		<p class="b">Fonksiyoların temel yapısı yukarıdaki gibidir. “function” anahtar kelimesi ile başlar. Daha sonra fonksiyona bir isim verilir. Yukarıdaki fonksiyonda fonk1 ismi verilmiştir.</p>
+		<p class="b">Fonksiyonları yapacağı işe göre isimlendirmek kolaylık sağlayacaktır. Fonksiyon ismi verildikten sonra “( )” parantez açılır.</p>
+		<p class="b">Parantezler virgüllerle ayrılmış parametre adlarını içerebilir: <strong>(parametre1, parametre2, …)</strong></p>
+		<p class="b">Parametreler fonksiyon çağrıldığında fonksiyon tarafından alınan değerlerdir. Alınan bu değerler değişkenler gibi davranır ve fonksiyon içerisinde bu şekilde davranır.</p>
+		<p class="b">{ } süslü parantezler içindeki kısım fonksiyonun çalıştıracağı kodlardır. Bu kodlar fonksiyon çağrıldığında çalışacaktır. Fonksiyonun çağrılması;</p>
+		<p class="b"><strong>Bir olay meydana geldiğinde (kullanıcı bir düğmeyi tıklattığında), JavaScript kodundan çağrıldığında, Otomatik olarak (kendiliğinden)</strong>olabilmektedir. </p>
+		<p class="b">Fonksiyonda kullanılan return ifadesi fonksiyonun geri döndüreceği değer için kullanılır. return ifadesine ulaşıldığında fonksiyon duracaktır.</p>
+		<p class="b">Yukarıda fonk1 ismiyle oluşturduğumuz fonksiyonu incelediğimizde dışarıdan 2 adet parametre aldığını görmekteyiz (s1,s2).</p>
+		<p class="b">ve alınan bu iki değerinin çarpımının geriye döndürüldüğünü görüyoruz.</p>
+		<p class="b">Şimdide oluşturduğumuz bu fonksiyonu nasıl çağırabileceğimize bakalım.</p>
+		<a href="#" class="image full"><img src="../images/20.jpg" alt=""></a>
+		<p class="c">Yukarıdaki örnekte aldığı 2 parametreyi çarpıp sonucu döndüren fonksiyonun oluşturulduğunu görüyoruz.</p>
+		<a href="#" class="image full"><img src="../images/21.jpg" alt=""></a>
+		<p class="a">Bu satır ile çağırdığımız fonk1 isimli fonksiyondan geri dönen değerin “kutu” isimli div içerisinde yazdırılmasını sağlıyoruz.</p>
+		<a href="#" class="image full"><img src="../images/22.jpg" alt=""></a>
+		<h2>Niçin Fonksiyon Kullanılır?</h2>
+		<p class="b">Yukarıda fonksiyon kullanımını en basit haliyle gördük. Fonksiyon kullanmaktaki amaç fonksiyon içerisine yazdığımız kodları defalarca kullanabilecek olmamızdır. Biraz daha açalım.</p>
+		<a href="#" class="image full"><img src="../images/23.jpg" alt=""></a>
+		<p class="c">Yukarıda kombinasyon hesaplamak için gerekli formülü görmekteyiz. Biz bu işlemi fonksiyon kullanmadan yapan bir sayfa oluşturacaksak yani kullanıcıdan “n” ve “r” değerini alıp sonucu hesaplayacaksak 3 defa faktoriyel hesabı yapmamız gerekecektir.</p>
+		<a href="#" class="image full"><img src="../images/24.jpg" alt=""></a>
+		<p class="a">Fakat biz faktoriyel alma işini bir fonksiyona yaptırırsak sadece kullanıcıdan aldığımız bu değerleri fonksiyona yollamamız yeterli olacaktır.</p>
+
+	</div>
+	
+<script type="text/javascript" src="../js/ayar.js"></script>
+</body>
+</html>

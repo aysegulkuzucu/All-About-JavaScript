@@ -1,0 +1,131 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>İnternet Teknolojileri Dersi</title>
+	<link rel="stylesheet" href="../css/style.css" />
+</head>
+<body onscroll="test()">
+    
+	<div class="ust"> 
+	<h2>Bil3106 Internet Teknolojileri: FrontEnd Development</h2>
+	<p>UZAKTAN EĞİTİM 1. HAFTA</p>
+	</div>
+	
+	
+	<div id="menu"> 
+		<a href="../index.html">JavaScript Giriş</a>
+        <a href="jssyntax.html">JavaScript Yazılım (Syntax) yapısı</a>
+        <a href="degiskenler.html">Değişkenler</a>
+        <a href="operatorler.html">Operatörler</a>
+        <a href="aritmetik.html">Aritmetik</a>
+        <a href="veritipleri.html">Veri Tipleri</a>
+        <a href="fonksiyon.html">Fonsiyon Yapısı</a>
+        <a href="olaylar.html">Olaylar</a>
+        <a href="stringler.html">Stringler, Sayılar, Diziler ve Dizi İşlemleri</a>
+        <a href="ifkosul.html">İf Koşul Yapıları</a>
+        <a class="aktif" href="donguler.html">Döngüler</a>
+        <a href="tipdonusum.html">Tip Dönüşümleri</a>
+        <a href="mimari.html">Çalışma yapısı ve genel mimarisi</a>
+        <a href="objectmodel.html">JS Object ( Nesne) Modeli ve Kullanımı</a>
+        <a href="jsdom.html">JS DOM Kullanım</a>
+        <a href="hw2_examples/adamasmaca.html">ADAM ASMACA</a>
+        <a href="hw2_examples/kullaniciformu.html">KULLANICI FORMU</a>
+        <a href="hw2_examples/alisverislistesi.html">ALIŞVERİŞ LİSTESİ</a>
+
+	</div>
+	
+	<div  class="icerik"> 
+	
+		<header>
+			<h2> Döngüler</h2>
+			<span class="byline">Programlamanın olmazsa olmazlarıdır. Bir komut bloğunu birden çok kez çalıştırmak için kullanılırlar. Örneğin; ekranımıza 1'den 100'e kadar sayı yazdırmak istiyoruz. Bunun için yüz kere document.write(n) ifadesini yazmayız. Burada devreye döngüler girer.</span>
+		</header>
+		<style>
+			p.c{
+				font-style: italic;
+				font-size: 50px;
+				color:rgb(212, 22, 230)
+			}
+			p.d{
+				font-style: normal;
+				font-size: 30px;
+				color:rgb(16, 90, 14)
+			}
+		</style>
+		<p class="c">- for Döngüsü</p>
+		<p class="d">En çok kullanılan döngüdür. Bir değişken için tanımladığımız koşul içindeki komutlar döngü tamamlanıncaya kadar çalışır.</p>
+		<a href="#" class="image full"><img src="../images/pics97.jpg" alt=""></a>
+		<p class="d">Şeklinde algoritması vardır. Şimdi bu algoritmanın nasıl çalıştığını bir örnek ile özetleyelim.</p>
+		<a href="#" class="image full"><img src="../images/pics98.jpg" alt=""></a>
+		<p class="d">Şeklinde bir döngümüz olsun. Kullanıcı sayısını i değişkenine atadık. i ise 100'e kadar birer birer artacak. Yazdırırken ise <br/> etiketi ile bunu alt alta yazdıracağız.</p>
+		<p class="d">Kodlarımı çalıştırdım ve örnek olarak "89" sayısını girdim.</p>
+		<a href="#" class="image full"><img src="../images/pics99.jpg" alt=""></a>
+		<p class="d">Ekran çıktım ise bu şekilde olacaktır. Eğer benim gibi zibidilik yapmak istiyorsanız girilen değere "-999999" gibi sayılar verebilirsiniz. İşlemcinizin pasını atarsınız.</p>
+		<p class="c">- while Döngüsü</p>
+		<p class="d">for döngüsü ile aynı işlemleri yapar. Birkaç küçük sözdizimi farkı vardır. Değişken döngüden önce tanımlanır. Parantez içerisine sadece koşul yazılır ve arttırma/azaltma işlemleri yazdırma işleminden sonra yapılır.</p>
+		<a href="#" class="image full"><img src="../images/pics100.jpg" alt=""></a>
+		<p class="d">Şeklinde bir algoritması vardır. Şimdi aynı örneğimizi while döngüsü ile yapalım.</p>
+		<a href="#" class="image full"><img src="../images/pics101.jpg" alt=""></a>
+		<p class="d">Bu sefer kullanıcı sayısını "i" değişkenime aktardım. Daha sonra döngümü yazdım. Dikkat ederseniz arttırma işlemini yazdırdıktan sonra yapıyorum.</p>
+		<p class="d">Test amacıyla "92" değerini girdim.</p>
+		<a href="#" class="image full"><img src="../images/pics102.jpg" alt=""></a>
+		<p class="d">Ekran çıktım bu şekilde olacaktır.</p>
+		<p class="c">- do ... while Döngüsü</p>
+		<p class="d">while döngüsüne çok benzer. Tek farkı koşul doğru olsun ya da olmasın döngü içersindeki komutların en az bir defa çalıştırılmasıdır.</p>
+		<a href="#" class="image full"><img src="../images/pics103.jpg" alt=""></a>
+		<p class="d">Şeklinde bir söz dizimi vardır. Şimdi aynı örneğimizi do ... while ile yapalım.</p>
+		<a href="#" class="image full"><img src="../images/pics104.jpg" alt=""></a>
+		<p class="d">Kodlarımı çalıştırıyorum. Bu sefer "94" değerini girdim.</p>
+		<a href="#" class="image full"><img src="../images/pics105.jpg" alt=""></a>
+		<p class="d">Çıktımız ise bu şekilde olacaktır.</p>
+		<p class="c">- Döngü Deyimleri</p>
+		<p class="d">Döngüden çıkmak ya da döngü başına gitmek için kullanılan deyimlerdir.</p>
+		<p class="c">- break Deyimi</p>
+		<p class="d">Döngüyü durdurmaya, terk etmeye yarar. switch döngüsünde bunun nasıl kullanılacağını görmüştük. if else, else if koşullarında da kullanılabilir.</p>
+		<p class="c">continue Deyimi</p>
+		<p class="d">Bir döngü içerisinde çalıştırılmasını istemediğimiz yerlerde kullanırız. Bunu şöyle göstereyim:</p>
+		<a href="#" class="image full"><img src="../images/pics106.jpg" alt=""></a>
+		<p class="d">Bu kodlarda 80 ve 90 arasındaki sayılar yazdırılmayacaktır. Örnek olarak "75" sayısını girdim.</p>
+		<a href="#" class="image full"><img src="../images/pics107.jpg" alt=""></a>
+		<p class="d">Çıktımız ise bu şekilde olacaktır.</p>
+
+		<header>
+			<h2>3. Fonksiyon Yapısı</h2>
+			<span class="byline">Fonksiyonlar bir işlevi yerine getiren kod bloklarıdır. Eğer bir projede birden fazla sayfada ya da yerde çalışmasını istediğimiz kodlar varsa imdadımıza fonksiyonlar yetişir. JavaScript'in nesne tabanlı (object-oriented) bir dil olmasından kaynaklı olarak belirli olayların gerçekleşmesini sağlamak için fonksiyonları kullanabiliriz.</span>
+			<span class="byline">Fonksiyonlar hazır ve kullanıcı tanımlı olmak üzere iki temel sınıfa ayrılırlar. Diğer bir sınıflama yöntemi ise parametreli ya da parametresiz olmalarıdır. Şimdi parametresiz fonksiyonlarla yavaş yavaş fonksiyonları öğrenmeye başlayalım.</span>
+		</header>
+		<p class="a">- Parametresiz Fonksiyonlar</p>
+		<p class="b">Parametresiz fonksiyonlar adından da anlaşılacağı gibi herhangi bir parametreye gerek duymadan ve fonksiyonda tanımlanan kodların yerine getirilmesi ile çalışan fonksiyonlardır.</p>
+		<a href="#" class="image full"><img src="../images/pics108.jpg" alt=""></a>
+		<p class="b">Şeklinde kodlarımız olsun. Kodu çalıştırdığımızda ilk sayı için bir bilgi penceresi, ilk sayıyı girdikten sonra ise ikinci sayı için bir bilgi penceresi açılacak. İkinci sayıyı girdikten sonra ise sonuç, uyarı penceresi olarak yazdırılacak. parseInt( ) ise prompt fonksiyonu ile alınan string veriyi number veri türüne çevirecek. Unutulmamalıdır ki kullanıcıdan alınan veriler daima string türündedir.</p>
+		<p class="b">Diyelim ki bu kodları bu sayfada kullandık. Fakat başka bir sayfada da kullanmak istiyoruz. Bunun için sil baştan üç satır kodu tekrar yazmayız. Fonksiyonumuzu tanımlarız ve kendi oluşturduğumuz js dosyasına yazarız ve js dosyasını da layout'umuza ekleriz. İşler bu şekilde yürüyor.</p>
+		<p class="b">Şimdi ilk parametresiz fonksiyonumuzu yazalım.</p>
+		<a href="#" class="image full"><img src="../images/pics109.jpg" alt=""></a>
+		<p class="b">İşte fonksiyon tanımlamak bu kadar basit. function yazdıktan sonra fonksiyon adımı verdim ve scope alanına çalışmasını istediğim kodları yazdım. Sonrasında da topla() fonksiyonumu çalıştırdım. Fonksiyonumu dahili bir js dosyasında tanımlarsam projemin istediğim sayfasında kullanabilirim.</p>
+		<p class="a">Parametreli Fonksiyonlar</p>
+		<p class="b">Kod yazarken iki değeri kısa bir şekilde toplamak istiyoruz diyelim. Ve bu kodları başka sayfalarda da kullanacağız. Bunun için aşağıdaki gibi parametreli bir fonksiyon tanımlamamız yeterlidir.</p>
+		<a href="#" class="image full"><img src="../images/pics110.jpg" alt=""></a>
+		<p class="b">ilkSayi ve ikinciSayi şeklinde iki parametresi olan topla isimli bir fonksiyon tanımladım. Number( ) fonksiyonu ile bu iki parametreyi number veri türüne çevirdim. Kodlarımı çalıştırdığım zaman "9" yanıtını alacağım.</p>
+		<a href="#" class="image full"><img src="../images/pics111.jpg" alt=""></a>
+		<p class="b">Bu kodları daha kısa bir şekilde de yazabilirim. Sadece Number( ) fonksiyonunu öğrenmeniz amacıyla ilk örneği verdim.</p>
+		<p class="a">return Deyimi</p>
+		<p class="b">Bazen kodlarımızda çalışmasını istemediğimiz alanlar olabilir. Hatırlarsanız bir önceki dersimizde continue deyimini kullanmıştık. continue'da çalışmasını istemediğimiz kodlar çalışmaz; fakat geri kalan kodlar çalışır. return'de ise kodların çalışmasını istemediğimiz kısmına gelindiğinde fonksiyondan çıkılır ve altındaki kodları çalıştırmaz. Aralarında böyle bir fark vardır.</p>
+		<a href="#" class="image full"><img src="../images/pics112.jpg" alt=""></a>
+		<p class="b">Fark hesabı yapan bir fonksiyon yazdım. Eğer ilk değer, ikinci değerden küçükse fonksiyondan çıkacağım. Değilse sonu yazdıracağım.</p>
+		<a href="#" class="image full"><img src="../images/pics113.jpg" alt=""></a>
+		<p class="b">Bu fonksiyonu bu şekilde bir uyarıyla da yazabilirsiniz.</p>
+		<p class="a">Hazır Fonksiyonlar</p>
+		<p class="b">Bu dersimize kadar write( ), alert( ), prompt( ), sup( ), concat( ) gibi birçok hazır fonksiyon gördük. Hazır fonksiyonlar kod yazımında kolaylık sağlayan JavaScript ile hazır gelen fonksiyon gruplarıdır. Şimdi birkaç tanesini daha öğrenelim.</p>
+		<p class="b"><strong>eval( ): </strong> Değişkenin türünü algılayıp dönüştürme (convert) işlemi yapar.</p>
+		<a href="#" class="image full"><img src="../images/pics114.jpg" alt=""></a>
+		<p class="b">a değişkenim number, b değişkenim ise string veri türünde. eval( ) fonksiyonu ile iki değeri topladığımda "20" yanıtını aldım. eval( ), b değişkeninin bir string olduğunu anladı ve onu number veri türüne çevirdi. Eğer eval( ) kullanmasaydım "128" yanıtını alacaktım ve sadece string birleştirme yapmış olacaktı.</p>
+		<p class="b"><strong>parseInt( ) ve parseFloat : </strong>parseInt( ) veriyi integer türüne yani tamsayı türüne dönüştürür. parseFloat( ) ise ondalıklı sayıya dönüştürme işlemi yapar.</p>
+		<p class="b"><strong>String( ) ve Number( ) : </strong>String( ) veriyi string türüne, Number( ) ise number türüne dönüştürür.</p>
+
+		
+	</div>
+	
+<script type="text/javascript" src="ayar.js"></script>
+</body>
+</html>

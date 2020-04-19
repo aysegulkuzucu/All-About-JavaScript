@@ -1,0 +1,90 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>İnternet Teknolojileri Dersi</title>
+	<link rel="stylesheet" href="../css/style.css" />
+</head>
+<body onscroll="test()">
+    
+	<div class="ust"> 
+	<h2>Bil3106 Internet Teknolojileri: FrontEnd Development</h2>
+	<p>UZAKTAN EĞİTİM 1. HAFTA</p>
+	</div>
+	
+	
+	<div id="menu"> 
+		<a href="../index.html">JavaScript Giriş</a>
+        <a href="jssyntax.html">JavaScript Yazılım (Syntax) yapısı</a>
+        <a href="degiskenler.html">Değişkenler</a>
+        <a href="operatorler.html">Operatörler</a>
+        <a href="aritmetik.html">Aritmetik</a>
+        <a class="aktif" href="veritipleri.html">Veri Tipleri</a>
+        <a href="fonksiyon.html">Fonsiyon Yapısı</a>
+        <a href="olaylar.html">Olaylar</a>
+        <a href="stringler.html">Stringler, Sayılar, Diziler ve Dizi İşlemleri</a>
+        <a href="ifkosul.html">İf Koşul Yapıları</a>
+        <a href="donguler.html">Döngüler</a>
+        <a href="tipdonusum.html">Tip Dönüşümleri</a>
+		<a href="mimari.html">Çalışma Yapısı ve Genel Mimarisi</a>
+		<a href="fonksiyonkullanimi.html">Fonksiyon Kullanımı</a>
+        <a href="objectmodel.html">JS Object ( Nesne) Modeli ve Kullanımı</a>
+        <a href="jsdom.html">JS DOM Kullanım</a>
+        <a href="hw2_examples/adamasmaca.html">ADAM ASMACA</a>
+        <a href="hw2_examples/kullaniciformu.html">KULLANICI FORMU</a>
+        <a href="hw2_examples/alisverislistesi.html">ALIŞVERİŞ LİSTESİ</a>
+
+	</div>
+	
+	<div  class="icerik"> 
+	
+		<header>
+			<h2> 5) JAVASCRİPT VERİ TİPLERİ </h2>
+			<span class="byline">Veri Türü Nedir?</span>
+		</header>
+		<p><strong>İnsanlardan farklı olarak bilgisayarlar, 1234 ve abcd arasındaki farkı anlayamazlar. Yani hangisi sayı, hangisi metin bunu ayırt edemezler.</strong></p>
+		<p><strong>Veri türü, değişkenler içinde saklanacak verinin türüne göre sınıflandırılmasıdır. Veri türleri her programla dili için oldukça önemli bir kavramdır.</strong></p>
+		<p><strong>Bir uygulama geliştirirken değişken içinde saklanan verinin türünü önceden belirtiriz. Böylece bilgisayar verinin saklanacağı bellek alanını buna göre ayırır.</strong></p>
+		<header>
+			<span class="byline">JavaScript dilinde birçok değişken türü bulunur.  Bu değişken türleri içerisinde birçok veri tipi saklayabilir. Bu veri tiplerinden bazıları; sayısal, metin, mantıksal, dizeler ve objelerdir.</span>
+		</header>
+		<style>
+			p.e{
+				font-style: italic;
+				font-size: 40px;
+				color:rgb(35, 17, 134)
+			}
+		</style>
+		<p class="e">-String Veri Tipi(Metin)</p>
+		<p><strong>String veri tipi içerisinde metinsel ifadeleri saklar. String veriler değişkenlere girilirken (“) tırnak işareti ya da (‘) kesme işareti kullanılır.</strong></p>
+		<a href="#" class="image full"><img src="../images/pics27.jpg" alt=""></a>
+		<p class="e">-Number Veri Tipi(Sayısal)</p>
+		<p><strong>Numbers veri tipi içerisinde sayısal değerleri tutmak için kullanılır. Değerler tanımlanırken (“) çift tırnak veya (‘) tek tırnak işaretine ihtiyaç yoktur.</strong></p>
+		<a href="#" class="image full"><img src="../images/pics28.jpg" alt=""></a>	
+		<p><strong>Ondalıklı sayı değeri tanımlanırken (.) nokta işareti kullanılır.</strong></p>		
+		<p class="e">-Boolean Veri Tipi(Mantıksal)</p>		
+		<p><strong>Bazı ifadeler sadece iki alternatiflidir. İfade ya doğrudur(true) ya da yanlıştır(false). Bu tip değişkenlere boolean ifadeler ismi verilir. Mantıksal veriler koşul gerektiren ifadeler için kullanılır.</strong></p>				
+		<a href="#" class="image full"><img src="../images/pics29.jpg" alt=""></a>	
+		<p class="e">-Array Verisi(Dizi)</p>	
+		<p><strong>Dizi bir veri tipinde birden fazla değer içerir. Dizi oluşturulurken köşeli parantez kullanılır ve değerler (,) ile ayrılır.</strong></p>
+		<a href="#" class="image full"><img src="../images/pics30.jpg" alt=""></a>	
+		<p class="e">-Veri İkilileri (Nesneler)</p>
+		<p><strong>Nesneler alt değişken verilerini içerisinde tutar. Alt değişkenler sıralanırken kıvrım parantezler kullanılır. Değişkenler virgüllerle ayrılarak yazılır.</strong></p>
+		<a href="#" class="image full"><img src="../images/pics31.jpg" alt=""></a>	
+		<p class="e">-Boş ve Tanımsız Veriler( Undefined & Null )</p>
+		<p><strong>JavaScript dilinde değer içermeyen değişkenler bulunur. Bu değişkenler veri içermezler. Veri içermeyen değişken oluşturulurken var degişken seklinde oluşturulur. Yani sadece değişken ismi yazılır. (=) eşittir operatörü kullanılmaz.</strong></p>
+		<a href="#" class="image full"><img src="../images/pics32.jpg" alt=""></a>	
+		<p><strong>Bazı durumlarda değişkenin içerisinde bulunan verinin silinmesi gerekir. Bunun için Null ifadesi kullanılır.</strong></p>
+		<a href="#" class="image full"><img src="../images/pics33.jpg" alt=""></a>	
+		<p class="e">-Veri Türünü Tespit Etmek (typeof)</p>
+		<p><strong>Typeof operatörü kullanılarak bir değişkenin türü sorgulanabilir.</strong></p>
+		<a href="#" class="image full"><img src="../images/pics34.jpg" alt=""></a>
+		<p class="e">-Değişkenin Veri Türünü Değiştirmek</p>
+		<p><strong>JavaScript veri türleri yeni değerler atanarak kolayca değiştirilebilir. Aşağıda a değişkeni içerisinde bulunan değer yeni bir değer almıştır.</strong></p>
+		<a href="#" class="image full"><img src="../images/pics35.jpg" alt=""></a>
+
+	</div>
+	
+<script type="text/javascript" src="../js/ayar.js"></script>
+</body>
+</html>

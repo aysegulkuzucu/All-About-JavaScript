@@ -1,0 +1,98 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>İnternet Teknolojileri Dersi</title>
+	<link rel="stylesheet" href="../css/style.css" />
+</head>
+<body onscroll="test()">
+    
+	<div class="ust"> 
+	<h2>Bil3106 Internet Teknolojileri: FrontEnd Development</h2>
+	<p>UZAKTAN EĞİTİM 2. HAFTA</p>
+	</div>
+	
+	
+	<div id="menu"> 
+        <a href="../index.html">JavaScript Giriş</a>
+        <a href="jssyntax.html">JavaScript Yazılım (Syntax) yapısı</a>
+        <a href="degiskenler.html">Değişkenler</a>
+        <a href="operatorler.html">Operatörler</a>
+        <a href="aritmetik.html">Aritmetik</a>
+        <a href="veritipleri.html">Veri Tipleri</a>
+        <a href="fonksiyon.html">Fonsiyon Yapısı</a>
+        <a href="olaylar.html">Olaylar</a>
+        <a href="stringler.html">Stringler, Sayılar, Diziler ve Dizi İşlemleri</a>
+        <a href="ifkosul.html">İf Koşul Yapıları</a>
+        <a href="donguler.html">Döngüler</a>
+        <a href="tipdonusum.html">Tip Dönüşümleri</a>
+        <a href="mimari.html">Çalışma Yapısı ve Genel Mimarisi</a>
+        <a href="fonksiyonkullanimi.html">Fonksiyon Kullanımı</a>
+        <a class="aktif"  href="objectmodel.html">JS Object ( Nesne) Modeli ve Kullanımı</a>
+        <a href="jsdom.html">JS DOM Kullanım</a>
+        <a href="hw2_examples/adamasmaca.html">ADAM ASMACA</a>
+        <a href="hw2_examples/kullaniciformu.html">KULLANICI FORMU</a>
+        <a href="hw2_examples/alisverislistesi.html">ALIŞVERİŞ LİSTESİ</a>
+	
+	</div>
+	
+	<div  class="icerik"> 
+   
+        <style>
+			
+        	p.a{
+		font-style: normal;
+		font-size: 30px;
+		color:rgb(27, 145, 3)
+		}
+		p.b{
+		font-style: normal;
+		font-size: 20px;
+		color:rgb(173, 19, 91)
+                }
+                p.c{
+                font-style: normal;
+                font-family: initial;
+		font-size: 20px;
+                color:rgb(14, 89, 158)
+                
+		}
+		</style>
+                <header>
+			<h2> JavaScript'in Çalışma Yapısı ve Mimarisim</h2>
+                        <p class="a">Javascript kodlama da kodlama yoğunluğu genelde fazladır. Kodlar genelde üstten alta doğru sıralanarak yazılır ve sunucu da tarayıcı da kodları bu şekilde sıraya dizerek yorumlar.</p>
+                </header>
+                
+                <p class="b">5 adet veri tip, 3 adet Object tipi bulunan javaScript dilinde veri tiplerini Number, String, Boolean, Undefined, ve Null (bu da bir object’dir). Object tipini ise fonksiyon, dizi, nesne (object)  gibi referanslar oluşturmaktadır. Bu yazımızda JavaScript’te bir Object nasıl oluşturulur ve nasıl kullanılır bunu göreceğiz. Öncelikle Object oluşturma hangi yöntemlerle yapılır buna bakalım.</p>
+                <p class="c">JavaScript’te nesne oluşturmak için { } süslü parantezler kullanılır.</p>
+                <p class="b"><strong>var arac={ };</strong></p>
+                <p class="b"><strong>var ogrenci={ };</strong></p>
+                <p class="c">Yukarıdaki şekilde bir tanımlama yapıldığında içinde hiçbir şey bulunmayan arac ve ogrenci nesneleri oluşturulmuş olur.</p>
+                <p class="c">Şimdi de oluşturulan nesnelere özellik atamasının nasıl yapılacağına bakalım.</p>
+
+                <a href="#" class="image full"><img src="../images/01.jpg" alt=""></a>
+                <p>Yukarıdaki tanımlamaya baktığımızda;</p>
+                <p class="a">Özellik: değer</p>
+                <p class="b">şeklinde bir atama yapıldığını ve birden fazla özellik eklendiğinde “,” virgül ile ayrıldığını görüyoruz. </p>
+                <p class="b">Şimdi aşağıdaki örneği inceleyelim. Örneğimizde  arac isimli Object (nesne) tanımlaması ve bu nesneye ait özellik tanımlaması yapılarak bu özelliklerin sayfada yazdırılması sağlanmakta. </p>
+                <a href="#" class="image full"><img src="../images/02.jpg" alt=""></a>
+                <p class="c">Sayfamızı çalıştırdığımızda aşağıdaki görüntü oluşacaktır. </p>
+                <a href="#" class="image full"><img src="../images/03.jpg" alt=""></a>
+                <p class="c"> Şimdi de nesnemize metot tanımlaması yapalım. Metot tanımlamasını yukarıdaki örnek üzerinde gerçekleştireceğiz. Nesnemize ucretHesapla isminde bir metot tanımlayacağız. Bu fonksiyon dışarıdan bir parametre alarak çalışacaktır. Dışarıdan gönderilen saat bilgisini saatUcreti ile çarparak ödenecek tutarın hesaplanması görevini üstlenecektir.</p>
+                <p class="b">Burada altını çizmekte fayda gördüğüm bir hususu belirtmek isterim. </p>
+                <p class="b"> <strong>Nesne içindeki özelliklerden biri metot içinde kullanılacaksa bu özellik this anahtar sözcüğü ile kullanılmalıdır. (this.saatUcreti)</strong></p>
+                <p class="b"> Kodlarımıza ve ekran çıktısına göz atalım.</p>
+                <a href="#" class="image full"><img src="../images/04.jpg" alt=""></a>
+                <p class="b"> <strong>Ekran Çıktısı:</strong></p>
+                <a href="#" class="image full"><img src="../images/05.jpg" alt=""></a>
+                <p class="c">Görüleceği üzere ödenecek tutar metot ile hesaplanarak gösterilmiştir. </p>
+                <p class="b">Şimdi basit bir örnek daha oluşturalım. Bu örneğimizde ogrenci isimli bir object’ e ait özellik ve metot tanımlaması yapacağız. ad ve soyad özelliklerinin yazdırılmasını sağlayacağız. Örneğe ait <script> </script> kodları; </p>
+                <a href="#" class="image full"><img src="../images/06.jpg" alt=""></a>
+                <p class="c">Başka bir JavaScript nesnesi oluşturma yöntemi de constructor pattern(yapıcı desen) olarak tanımlamak mümkündür. Fonksiyon tanımlama yöntemi ile sınıf oluşturup,  oluşturulan sınıf new anahtarı ile nesne olarak türetilir. </p>
+                <a href="#" class="image full"><img src="../images/07.jpg" alt=""></a>
+
+	</div>
+	
+<script type="text/javascript" src="../js/ayar.js"></script>
+</body>
+</html>

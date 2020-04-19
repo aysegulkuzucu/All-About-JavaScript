@@ -1,0 +1,308 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>İnternet Teknolojileri Dersi</title>
+	<link rel="stylesheet" href="../css/style.css" />
+</head>
+<body onscroll="test()">
+    
+	<div class="ust"> 
+	<h2>Bil3106 Internet Teknolojileri: FrontEnd Development</h2>
+	<p>UZAKTAN EĞİTİM 1. HAFTA</p>
+	</div>
+	
+	<div id="menu"> 
+		<a href="../index.html">JavaScript Giriş</a>
+        <a href="jssyntax.html">JavaScript Yazılım (Syntax) yapısı</a>
+        <a href="degiskenler.html">Değişkenler</a>
+        <a href="operatorler.html">Operatörler</a>
+        <a href="aritmetik.html">Aritmetik</a>
+        <a href="veritipleri.html">Veri Tipleri</a>
+        <a href="fonksiyon.html">Fonsiyon Yapısı</a>
+        <a href="olaylar.html">Olaylar</a>
+        <a class="aktif" href="stringler.html">Stringler, Sayılar, Diziler ve Dizi İşlemleri</a>
+        <a href="ifkosul.html">İf Koşul Yapıları</a>
+        <a href="donguler.html">Döngüler</a>
+        <a href="tipdonusum.html">Tip Dönüşümleri</a>
+		<a href="mimari.html">Çalışma Yapısı ve Genel Mimarisi</a>
+		<a href="fonksiyonkullanimi.html">Fonksiyon Kullanımı</a>
+        <a href="objectmodel.html">JS Object ( Nesne) Modeli ve Kullanımı</a>
+        <a href="jsdom.html">JS DOM Kullanım</a>
+        <a href="hw2_examples/adamasmaca.html">ADAM ASMACA</a>
+        <a href="hw2_examples/kullaniciformu.html">KULLANICI FORMU</a>
+        <a href="hw2_examples/alisverislistesi.html">ALIŞVERİŞ LİSTESİ</a>
+	
+	</div>
+	
+	<div  class="icerik"> 
+		<header>
+			<h2> JAVASCRİPT STRİNGLER</h2>
+			<span class="byline">JavaScript string veri türü, metinleri saklamak ve üzerinde işlem yapmak için kullanılır</span>
+		</header>
+		<style>
+			p.f{
+				font-style: normal;
+				font-size: 50px;
+				color:rgb(17, 87, 134)
+			}
+		</style>
+		<p class="f">-JavaScript String Veri Türü</p>
+		<p><strong>Bir JavaScript string, basitçe bir grup karakteri saklamaya yarar. "Ali", "Ali Veli", "Bu bir web sitesidir", "sezon11" birer string örnekleridir.</strong></p>
+		<p><strong>Bir string türündeki bir değişkene değer atarken string ifade tırnak içinde yazılmalıdır.</strong></p>
+		<p><strong>Bu tırnak işareti tek veya çift olabilir.</strong></p>
+		<a href="#" class="image full"><img src="../images/pics36.jpg" alt=""></a>
+		<p><strong>Bir string değişkene değer atarken, metnin içinde tek tırnak veya çift tırnak olmadığı müddetçe istediğiniz uzunlukta veri girebilirsiniz. </strong></p>
+		<p><strong> Eğer metin içinde  string yapısını bozacak tek tırnak veya çift tırnak varsa buna özel önlem almanız gerekir.</strong></p>
+		<p><strong> Bir metinde string yapısını bozacak tek tırnak veya çift tırnak varsa o zaman JavaScript kaçış işaretini kullanmalısınız.</strong></p>
+		<p><strong> Kaçış işareti \ işaretidir.</strong></p>
+		<a href="#" class="image full"><img src="../images/pics37.jpg" alt=""></a>
+		<p class="f">-String Length (Stringin uzunluğu)</p>
+		<p><strong>String yerleşik olarak bazı özelliklere sahiptir. ' length 'bunlardan biridir ve stringin uzunluğunu verir.</strong></p>
+		<a href="#" class="image full"><img src="../images/pics38.jpg" alt=""></a>
+		<p class="f">-Özel Karakterler</p>
+		<p><strong>Yukarıda bahsedildiği gibi bir stringe atadığınız değer içinde " veya ' gibi özel karakterler varsa bu JavaScript tarafından yanlış anlaşılabilir. </strong></p>
+		<p><strong>Bildiğiniz gibi JavaScript'de  " ve '  karakterleri string değişkene veri atarken kullanılan karakterlerdir. </strong></p>
+		<p><strong>Bu tür bir sorun ile karşılaşmamak için eğer metnin içinde " veya ' karakterleri varsa başına \ karakteri koyarak bunun metnin bir parçası olduğunu JavaScript'e bildiririz </strong></p>
+		<p><strong>\ karakteri JavaScript'te Kaçış Karakteri olarak adlandırılır. </strong></p>
+		<a href="#" class="image full"><img src="../images/pics39.jpg" alt=""></a>
+		<p><strong>\ kaçış karakteri</strong></p> <pre>
+Metinde tek tırnak varsa: \'
+Metinde çift tırnak varsa \"
+Metinde ters eğik çizgi varsa \\
+		</pre>
+		<p><strong>şeklinde kullanılabilir.</strong></p>
+
+		<header>
+
+		<h2> JAVASCRİPT STRİNG METODLARI</h2>
+		<span class="byline">Bu kısımda bazi veri tiplerini ve metodlarini anlatacağım.</span>
+		<pre><strong>
+1. String'in uzunlugu
+2. String icinde veri arama
+3. String icinden istedigmiz veriyi alma
+4. ...
+		</strong></pre>
+		<span class="byline">gibi zaman zaman ihtiyac duyacagimiz durumlari inceleyeceğim.</span>
+	</header>
+	<style>
+		p.g{
+			font-style: normal;
+			font-size: 50px;
+			color:rgb(192, 34, 34)
+		}
+	</style>
+	<p class="g">-Javascript String.length</p>
+	<p><strong>String verinin uzunlugunu dondurur.</strong></p>
+	<a href="#" class="image full"><img src="../images/pics40.jpg" alt=""></a>
+	<p class="g">-Javascript String.indexOf</p>
+	<p><strong>Oldukca kullanisli bir metot,bir string icinde baska bir string deger aramaya yarar,bulursa konumun index numarasini dondurur,bulamazsa -1 doner.</strong></p>
+	<a href="#" class="image full"><img src="../images/pics41.jpg" alt=""></a>
+	<p class="g">-Javascript String.lastIndexOf</p>
+	<p><strong>String icinde aranan verinin son komumun döndurur,bulamazsa -1 döner.</strong></p>
+	<a href="#" class="image full"><img src="../images/pics42.jpg" alt=""></a>
+	<p><strong>Asagida dersin devaminda diger onemli metotlardan bahsettik fakat konunun sonuna birakmadan burda kendimizde Stringler icin bir metot olusturalim.</strong></p>
+	<a href="#" class="image full"><img src="../images/pics43.jpg" alt=""></a>
+	<p><strong>Evet String metotlarinin kullanim bicimini ogrendigimize gore diger onemli metotlari tablo halinde vermek daha yararli olacaktir.(Asagida bazi yerlerde parametre olarak "düzenli ifade" olabilir vs. diyoruz burda sadece bilginiz olsun düzenli ifadeleri ayri bir ders olarak göreceğiz)</strong></p>
+	
+	<p class="g">-charAt</p>
+	<p><strong>"Javascript".charAt(1)</strong></p>
+	<p><strong>sonuc='a';Belirtilen indexteki karakteri getirir</strong></p>
+	
+	<p class="g">-charCodeAt</p>
+	<p><strong>"Javascript".charCodeAt(1)</strong></p>
+	<p><strong>sonuc='97';Belirtilen indexteki karakterin unicode degerini getirir.</strong></p>
+	
+	<p class="g">-trim</p>
+	<p><strong>String verinin basindaki ve sonundaki bosluklari siler</strong></p>
+	<a href="#" class="image full"><img src="../images/pics44.jpg" alt=""></a>
+	
+	<p class="g">-split	</p>
+	<p><strong>String veriyi belirli bir kritelere gore diziye cevirebilirsiniz</strong></p>
+	<a href="#" class="image full"><img src="../images/pics45.jpg" alt=""></a>
+	
+	<p class="g">-search</p>
+	<p><strong>"Javascript".search("pt")</strong></p>
+	<p><strong>sonuc=8;indexOf gibi calisir bulamazsa -1 doner,fakat indexOf'a gore daha gelismis diyebiliriz cunku duzenli ifadeye gorede arama yapabilir.</strong></p>
+	
+	<p class="g">-slice</p>
+	<p><strong>"Javascript".slice(4,10)</strong></p>
+	<p><strong>sonuc='script';String veriyi belirtilen konumlardan keser ve sonucu getirir.2.parametre verilmezse sona kadar kesme islemi yapar</strong></p>
+	<p><strong>"Javascript".slice(4);sonuc='script'</strong></p>
+	<p><strong>Asagidaki gibi negatif degerler kullanirsak bu defa kesme sondan islem yapar</strong></p>
+	<p><strong>"Javascript".slice(-10,-6); sonuc='Java'</strong></p>
+	
+	<p class="g">-substring</p>
+	<p><strong>"Javascript".substring(1,5)</strong></p>
+	<p><strong>sonuc='avas'; slice gibi calisiyor farki negatif deger almiyor</strong></p>
+	
+	<p class="g">-substr</p>
+	<p><strong>"Javascript".substr(1,3)</strong></p>
+	<p><strong>sonuc='"www.birbyte.net Android Dersleri'</strong></p>
+	<p><strong>1.parametredeki veriyi bulursa 2.parametredeki degerle degistirir</strong></p>
+	<p><strong>Fakat tum eslesmeleri degil sadece ilk buldugu degeri degistirir,birden fazla eslesme varsa degismez.</strong></p>
+	<a href="#" class="image full"><img src="../images/pics46.jpg" alt=""></a>
+	
+	<p class="g">-replace</p>
+	<p><strong>sonuc='"www.birbyte.net Android Dersleri'</strong></p>
+	<p><strong>1.parametredeki veriyi bulursa 2.parametredeki degerle degistirir</strong></p>
+	<p><strong>Fakat tum eslesmeleri degil sadece ilk buldugu degeri degistirir,birden fazla eslesme varsa degismez.</strong></p>
+	<p><strong>replace parametre olarak düzenli ifade de kabul ettiği için asagidaki gibi bir kodla tum eslesmeleri degistirebiliriz.</strong></p>
+	<a href="#" class="image full"><img src="../images/pics46.jpg" alt=""></a>
+
+	<p class="g">-toLowerCase</p>
+	<p><strong>"Javascript".toLowerCase()</strong></p>
+	<p><strong>sonuc='javascript'; String veriyi kucuk karakterlere cevirir.</strong></p>
+	
+	<p class="g">-concat</p>
+	<p><strong>"Javascript".toLowerCase()</strong></p>
+	<p><strong>sonuc='javascript'; iki yada daha cok string veriyi birlestirir.</strong></p>
+	<a href="#" class="image full"><img src="../images/pics47.jpg" alt=""></a>
+
+	<header>
+		<h2>1) Sayılar</h2>
+		<span class="byline">Javascript Number</span>
+	</header>
+	<p><strong>Bu derse sayilara birazdaha yakindan bakacagiz,gerekli aciklamalari ornek uzerinde bulabilirsiniz.</strong></p>
+	<a href="#" class="image full"><img src="../images/pics48.jpg" alt=""></a>
+	<p><strong>Simdide sayilar uzerinde islemlere goz atalim .</strong></p>
+	<a href="#" class="image full"><img src="../images/pics49.jpg" alt=""></a>
+	<p><strong>Javascript ile calisirken virgullü sayilar ve 16-17(yada daha buyuk) haneli tamsayilarla calisirken yanlis sonuclar alabilirsiniz. Bu nedenle dersin sonlarina dogru isSafeInteger () yonteminden bahsedecegiz.</strong></p>
+	<a href="#" class="image full"><img src="../images/pics50.jpg" alt=""></a>
+	<p><strong>10 tabanindaki sayilari 2,8 ve 16 tabaninda yazalim</strong></p>
+	<a href="#" class="image full"><img src="../images/pics51.jpg" alt=""></a>
+
+	<style>
+		p.a{
+			font-style: normal;
+			font-size: 50px;
+			color:rgb(34, 37, 192)
+		}
+	</style>
+	<p class="a">-parseInt() ve parseFloat()</p>
+	<p><strong>String olarak aldigniz verileri ayristirirken basvurabiliriz,ornegi inceleyelim.</strong></p>
+	<a href="#" class="image full"><img src="../images/pics52.jpg" alt=""></a>
+	<p class="a">-isInteger()</p>
+	<p><strong>Verilen deger tamsayi ise true doner.</strong></p>
+	<a href="#" class="image full"><img src="../images/pics53.jpg" alt=""></a>
+	<p class="a">- isSafeInteger()</p>
+	<p><strong>Verilen degerin guvenli aralikta olup olmadigi kontrolunu yapar.</strong></p>
+	<a href="#" class="image full"><img src="../images/pics54.jpg" alt=""></a>
+	<p class="a">- prototype</p>
+	<p><strong>Yukarda ogrendigmiz yontemlere benzer bir yontemi prototype kullanarak olusturalim  amacimiz verilen degerin karesini donduren bir yontem hazirlamak olsun.</strong></p>
+	<a href="#" class="image full"><img src="../images/pics55.jpg" alt=""></a>
+
+	<header>
+		<h2>2) Diziler ve Dizi İşlemleri </h2>
+		<span class="byline">Birden fazla verinin saklanması için oluşturulan değişkenlere dizi adı verilir. Dizilerin oluşturulmasındaki temel düşünce birden fazla veriye tek bir değişken altından erişebilmektir.</span>
+	</header>
+	<p><strong>Değişkenlerdeki her bir veriye eleman denir. Dizi elemanları indeks değerleri ile çağrılırlar. İndeks bir elemanın dizi içinde nerede yer aldığını gösterir.</strong></p>
+	<p><strong>İndeksler bir çok programlama dilinde olduğu gibi 0'dan başlar. 0'dan başlamasının sebebi programlama dillerinin tamamen insan mantığı oluşturulmuş olduğunun göstergesidir.</strong></p>
+	<p><strong>Dizide eleman tanımlamak için kullanılan üç yöntem vardır. </strong></p>
+	<p><strong>Sayilar adında 4 elemanlı bir dizi oluşturduk.</strong></p>
+	<a href="#" class="image full"><img src="../images/pics56.jpg" alt=""></a>
+	<p><strong>Çıktımız ise bu şekilde olacaktır.</strong></p>
+	<a href="#" class="image full"><img src="../images/pics57.jpg" alt=""></a>
+	<p><strong>Bu da ikinci yöntemdir. Dizi elemanlarını köşeli parantezler ([ ]) içerisine yazıyoruz.</strong></p>
+	<a href="#" class="image full"><img src="../images/pics58.jpg" alt=""></a>
+	<p><strong>Çıktımız ise aynı şekilde olacaktır.</strong></p>
+	<p><strong>Son yöntemimizde ise sayilar adında boş bir dizi oluşturduk ve elemanlarını tek tek girdik.</strong></p>
+	<a href="#" class="image full"><img src="../images/pics59.jpg" alt=""></a>
+	<p><strong>Bu çıktımız da aynı olacaktır.</strong></p>
+
+	<style>
+		p.b{
+			font-style: normal;
+			font-size: 50px;
+			color:rgb(185, 24, 118)
+		}
+	</style>
+	<p class="b">-length özelliği: </p>
+	<p><strong>Bir dizinin eleman sayısını dilimizde uzunluk anlamına gelen length özelliği ile sorgulayabiliriz.</strong></p>
+	<a href="#" class="image full"><img src="../images/pics60.jpg" alt=""></a>
+	<p><strong>Bunun için dizi adindan sonra .length komutunu çalıştırmamız yeterlidir.</strong></p>
+	<p><strong>Çıktımız ise bu şekilde olacaktır. : 4</strong></p>
+	<p><strong>İstenilen eleman değerine ulaşmak için indeks değerini sorgulamak yeterlidir.</strong></p>
+	<a href="#" class="image full"><img src="../images/pics61.jpg" alt=""></a>
+	<p><strong>Çıktımız ise ikinci indeks değerini verecektir. : iki </strong></p>
+	
+	<p class="b">-Dizi Elemanlarını Değiştirme </p>
+	<p><strong>JavaScript'te dizi elemanları oldukça kolay bir şekilde değiştirilebililr.</strong></p>	
+	<a href="#" class="image full"><img src="../images/pics62.jpg" alt=""></a>
+	<p><strong>Örneğin sayilar dizisindeki "iki" elemanını "iikii" olarak değiştirdik. Bunun için değiştirmek istediğimiz elemanın indeks değerini yazdıktan sonra yeni değeri atamamız yeterlidir.</strong></p>	
+
+	<p class="b">-Diziye Yeni Eleman Ekleme </p>
+	<p><strong>JavaScript'te diziye yeni eleman eklemek de oldukça kolaydır.</strong></p>
+	<p><strong>push( ) metodu:</strong> push dilimizde ittirmek anlamına gelmektedir. JavaScript'te dizinin sonuna eleman eklemek için kullanılır.</p>
+	<a href="#" class="image full"><img src="../images/pics63.jpg" alt=""></a>
+	<p><strong>Bu şekilde iki yeni eleman daha eklemiş olduk. Çıktımız ise şu şekilde oldu : sıfır,bir,iki,üç,dört,beş</strong></p>
+	<p><strong>unshift( ) metodu:</strong>Bu method JavaScript'te dizinin başına eleman eklemek için kullanılır.</p>
+	<a href="#" class="image full"><img src="../images/pics64.jpg" alt=""></a>
+	<p><strong>Negatif ifadeli sayılarımızı dizinin başına ekledik.</strong></p>	
+	<p><strong>Çıktımız ise bu şekilde olacaktır. : eksi üç,eksi iki,eksi bir,sıfır,bir,iki,üç</strong></p>
+	 
+	<p class="b">-Diziden Eleman Silme </p>
+	<p><strong>splice( ) metodu : </strong> splice dilimizde iki ucu birbirine birleştirmek gibi bir anlama gelmektedir. JavaScript'te ise belirtilen index değerinden sonra silinecek eleman ya da elemanlar için kullanılır. splice metodunda replace'de olduğu iki parametre vardır. İlk parametre silinecek indeks konumunu, ikinci parametre ise indeksten sonra kaç adet elemanın silineceğini belirtir.</p>
+	<a href="#" class="image full"><img src="../images/pics65.jpg" alt=""></a>
+	<p><strong>. Burada şunu yaptık: Negatif değerli sayıları ekledik ve daha sonra bu sayıları diziden çıkardık.</strong></p>	
+	<p><strong>Çıktımız ise bu şekilde olacaktır. : sıfır,bir,iki,üç</strong></p>
+	<p><strong>pop( ) ve shift( ) metodları:</strong> pop metodu dizinin son elemanını, shift metodu ise dizinin ilk elemanını silmeye yarar.</p>
+	<a href="#" class="image full"><img src="../images/pics66.jpg" alt=""></a>
+	<p><strong>sayilar dizimizin ilk ve son elemanları olan sıfır ve üç elemanlarını sildik.</strong></p>
+	<p><strong>Çıktımız bu şekilde olacaktır. : bir,iki</strong></p>
+	<p><strong>delete operatörü:</strong> Bu operatör ilgili elemanı listeden çıkartır ve yerine tanımsız bir eleman atar. Diğer bir ifade ile ilgili indekse ait elemanı tanımsız yapar.</p>
+	<a href="#" class="image full"><img src="../images/pics67.jpg" alt=""></a>
+	<p><strong>1 numaralı indeksi sildik. Fakat kaldırmadık. Yerine tanımsız bir değişken atandı. Bir alt satırdaki dizi boyutundan bunu anlayabilirsiniz.</strong></p>
+	<p><strong>Çıktımız ise bu şekilde olacaktır. :</strong></p>
+	<a href="#" class="image full"><img src="../images/pics68.jpg" alt=""></a>
+
+	<p class="b">-Diziden Eşzamanlı olarak Eleman Silme ve Ekleme </p>
+	<p><strong>Yine splice( ) fonksiyonunu kullanıyoruz. Fakat bu sefer iki parametreden sonra sildiğimiz elemanların yerine gelecek elemanları yazıyoruz. splice( )'ı tam olarak anladıysanız bu işlem oldukça kolay gelecektir.</strong></p>
+	<a href="#" class="image full"><img src="../images/pics69.jpg" alt=""></a>
+	<p><strong>Bu sefer negatif ifadeleri sayıları sildik ve yerine "zinzin", "zomzom", "zumzum" değerlerini yazdırdık.</strong></p>	
+	<p><strong>Çıktımız ise bu şekilde olacaktır. :</strong></p>	
+	<a href="#" class="image full"><img src="../images/pics70.jpg" alt=""></a>
+
+
+	<p class="b">-Dizilerin Birleştirilmesi</p>
+	<p><strong>concat( ) metodu:</strong>Birden fazla diziyi birleştirmek için kullanılır.</p>
+	<a href="#" class="image full"><img src="../images/pics71.jpg" alt=""></a>
+	<p><strong>Burada sayilar ve cinler adında iki dizimiz var. sayilar_ve_cinler adında yeni bir dizi tanımlıyoruz ve iki dizimizi birleştiriyoruz.</strong></p>
+	<p><strong>Çıktımız ise bu şekilde olacaktır. : sıfır,bir,iki,üç,zinzin,zomzom,zepzep</strong></p>
+
+	<p class="b">-Elemanların Sıralanması</p>
+	<p><strong>sort( ) metodu: </strong>Dizi elemanlarını küçükten büyüğe göre sıralamak için kullanılır.</p>
+	<a href="#" class="image full"><img src="../images/pics72.jpg" alt=""></a>
+	<p><strong>Örneğimizde sort( ) metodu ile elemanlarımızı alfabetik sıraya göre sıraladık. Önemle belirteyim ki, elemanların indeks konumları da değişecektir.</strong></p>	
+	<p><strong>Çıktımız ise bu şekilde olacaktır. : bir,iki,sıfır,üç</strong></p>
+	<p><strong>reverse( ) metodu:</strong>Dizi elemanlarını tersten sıralamak için kullanılır.</p>	
+	<a href="#" class="image full"><img src="../images/pics73.jpg" alt=""></a>
+	<p><strong>Örneğimizde reverse( ) metodu ile elemanlarımızı tersten sıraladık.</strong></p>	
+	<p><strong>Çıktımız ise bu şekilde olacaktır. : üç,iki,bir,sıfır</strong></p>	
+
+	<p class="b">-Dizide Değişken Aramak</p>
+	<p><strong>indexof( ) metodu: </strong> Diyelim ki bir dizide çok fazla elemanımız var bir elemanı arıyoruz; fakat nerede olduğunu bulamıyoruz. Bunun için indexof( ) fonsiyonunu kullanıyoruz. Bu metod aranan elemanın indeks konumunu verir.</p>
+	<a href="#" class="image full"><img src="../images/pics74.jpg" alt=""></a>
+	<p><strong>Örneğimizde "iki" adlı elemanın nerede olduğunu sorgulattık.</strong></p>
+	<p><strong>Çıktımız ise bu şekilde indeks numarasını verecektir. : 2</strong></p>
+
+	<p class="b">-Elemanların Dönüşümü ve Metinsel İşlemler</p>
+	<p><strong>Dönüşümü öğrenmeden önce bir dizi içerisindeki elemanların hangi veri türü olduğunu öğrenelim.</strong></p>
+	<p><strong>typeof ( ) metodu: </strong> Bu metod bir değişkenin ne tür bir veri türü olduğu hakkında bilgi verir.</p>
+	<a href="#" class="image full"><img src="../images/pics75.jpg" alt=""></a>
+	<p><strong>Örneğimizde indeks değeri 4 olan "1" adlı elemanın ne tür bir veri olduğunu sorguladık.</strong></p>
+	<p><strong>"1" elemanının number veri türünde olduğunu öğrendik. : number</strong></p>								
+	<p><strong>toString( ) metodu: </strong>Dizi içindeki tüm elemanları string veri türüne çevirir.</p>
+	<a href="#" class="image full"><img src="../images/pics76.jpg" alt=""></a>
+	<p><strong>Burada sayilar dizisindeki tüm elemanları string türüne çevirdik (convert ettik).</strong></p>
+	<p><strong>Dördüncü eleman olan "1"in ne tür olduğunu sorduğumuzda ise string yanıtını aldık. : string</strong></p>
+	<p><strong>join( ) metodu: </strong> Normalde çıktımızı yazdırırken elemanlar arasına varsayılan olarak virgül konulur. join ile dizi içindeki elemanların sıralama görünümünü değiştirebiliriz.</p>
+	<a href="#" class="image full"><img src="../images/pics77.jpg" alt=""></a>
+	<p><strong>Elemanlar arasına - (tire) işaretinin konulmasını istedim.</strong></p>
+	<p><strong>Çıktımız ise bu şekilde olacaktır. : sıfır-bir-iki-üç</strong></p>
+
+	</div>
+	
+<script type="text/javascript" src="../js/ayar.js"></script>
+</body>
+</html>

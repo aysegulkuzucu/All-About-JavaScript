@@ -1,0 +1,270 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+    <title>Adam Asmaca Oyun</title>
+
+    
+    <link rel="stylesheet" href="../../css/style.css" />
+    
+    <style>
+        .harf,.bharf{
+        width: 50px;
+        height: 50px;
+        border-top-style: hidden;
+        margin-bottom:4px;
+        color :rgb(255, 255, 255);
+        }
+         
+    </style>
+
+</head>
+<body onscroll="test()">
+    
+	<div class="ust"> 
+	<h2>Bil3106 Internet Teknolojileri: FrontEnd Development</h2>
+	<p>UZAKTAN EĞİTİM 2. HAFTA</p>
+	</div>
+	
+	
+	<div id="menu"> 
+        <a href="../../index.html">JavaScript Giriş</a>
+        <a href="../jssyntax.html">JavaScript Yazılım (Syntax) yapısı</a>
+        <a href="../degiskenler.html">Değişkenler</a>
+        <a href="../operatorler.html">Operatörler</a>
+        <a href="../aritmetik.html">Aritmetik</a>
+        <a href="../veritipleri.html">Veri Tipleri</a>
+        <a href="../fonksiyon.html">Fonsiyon Yapısı</a>
+        <a href="../olaylar.html">Olaylar</a>
+        <a href="../stringler.html">Stringler, Sayılar, Diziler ve Dizi İşlemleri</a>
+        <a href="../ifkosul.html">İf Koşul Yapıları</a>
+        <a href="../donguler.html">Döngüler</a>
+        <a href="../tipdonusum.html">Tip Dönüşümleri</a>
+        <a href="../mimari.html">Çalışma yapısı ve genel mimarisi</a>
+        <a href="../fonksiyonkullanimi.html">Fonksiyon Kullanımı</a>
+        <a href="../objectmodel.html">JS Object ( Nesne) Modeli ve Kullanımı</a>
+        <a href="../jsdom.html">JS DOM Kullanım</a>
+        <a class="aktif" href="adamasmaca.html">ADAM ASMACA</a>
+        <a href="kullaniciformu.html">KULLANICI FORMU</a>
+        <a href="alisverislistesi.html">ALIŞVERİŞ LİSTESİ</a>
+
+	</div>
+	
+	<div  class="icerik"> 
+
+    
+        </head>
+        <body>
+        <div class="container">
+        <form>
+        <div class="col-md-6">
+        <div class="form-group">
+        <label for="daracagi">Darağacı</label>
+        <textarea id="daracagi" class="form-control" rows="6"></textarea>
+        </div>
+        </div>
+        <div class="col-md-6">
+        <div class="form-group">
+        <label for="cikan-harf">Daha önceki denediğiniz harfler</label>
+        <textarea id="cikan-harf" class="form-control" rows="6"></textarea>
+        </div>
+        </div>
+        <div class="col-md-12">
+        <div class="form-group">
+        <label for="cikankelime">Aranan Kelime</label>
+        </div>
+        <div class="form-group" id="yertutucu">
+        </div>
+        </div>
+        <div class="col-md-6 col-md-offset-3">
+        <button type="button" class="btn btn-primary harf">A</button>
+        <button type="button" class="btn btn-primary harf">B</button>
+        <button type="button" class="btn btn-primary harf">C</button>
+        <button type="button" class="btn btn-primary harf">Ç</button>
+        <button type="button" class="btn btn-primary harf">D</button>
+        <button type="button" class="btn btn-primary harf">E</button>
+        <button type="button" class="btn btn-primary harf">F</button>
+        <button type="button" class="btn btn-primary harf">G</button>
+        <button type="button" class="btn btn-primary harf">Ğ</button>
+        <button type="button" class="btn btn-primary harf">H</button>
+        <button type="button" class="btn btn-primary harf">I</button>
+        <button type="button" class="btn btn-primary harf">İ</button>
+        <button type="button" class="btn btn-primary harf">J</button>
+        <button type="button" class="btn btn-primary harf">K</button>
+        <button type="button" class="btn btn-primary harf">L</button>
+        <button type="button" class="btn btn-primary harf">M</button>
+        <button type="button" class="btn btn-primary harf">N</button>
+        <button type="button" class="btn btn-primary harf">O</button>
+        <button type="button" class="btn btn-primary harf">Ö</button>
+        <button type="button" class="btn btn-primary harf">P</button>
+        <button type="button" class="btn btn-primary harf">R</button>
+        <button type="button" class="btn btn-primary harf">S</button>
+        <button type="button" class="btn btn-primary harf">Ş</button>
+        <button type="button" class="btn btn-primary harf">T</button>
+        <button type="button" class="btn btn-primary harf">U</button>
+        <button type="button" class="btn btn-primary harf">Ü</button>
+        <button type="button" class="btn btn-primary harf">V</button>
+        <button type="button" class="btn btn-primary harf">Y</button>
+        <button type="button" class="btn btn-primary harf">Z</button>
+        </div>
+        <div class="col-md-6 col-md-offset-3">
+        <button type="button" class="btn btn-primary btn-danger btn-block" id="kelime-uret">KELİMEYİ DEĞİŞTİRİN</button>
+        </div>
+        </form>
+        </div>
+        <script>
+        var adam = new Array("___\n", " |\n", " O\n", " /", "|", "\\\n", " /", " \\\n", "___");
+        var kelimeler= ["KAPI","ÇEKMECE","TEKNOLOJİ","BİLGİSAYAR","TERZİ","TERAZİ","YOKARTIK","BULMACA", "SİVAS"];
+        var kelime;
+        var hak=10;
+         
+        //nesnelerin oluşturulması
+        var kelimeUret= document.getElementById("kelime-uret");
+        var daragaci= document.getElementById("daracagi");
+        var cikanHarf= document.getElementById("cikan-harf");
+        var harfler= document.querySelectorAll(".harf");
+         
+        //bootstrap(otomatik çalışacak kodlar)
+        (function(){
+        harfler.forEach(function(gelen) {
+        gelen.onclick=function(olay){
+         
+        this.setAttribute("disabled","disabled");
+        var durum= harfKontrol(kelime,this.textContent);
+        harfEkle(this.textContent);
+        if(durum)
+        {
+        harfYerlestir(kelime,this.textContent);
+         
+        }
+        else
+        {
+        daragaci.textContent+= adam[hak];
+        hak++;
+        }
+         
+        var tireDurum=tireKontrol();
+        if(!tireDurum)
+        {
+        window.alert("TEBRİKLER");
+        tumHarflerPasif();
+         
+        }
+        if(adam.length<=hak)
+        {
+        window.alert("ÖLDÜNÜZ");
+        tumHarfleriYaz(kelime);
+        tumHarflerPasif();
+         
+        }
+        }
+        });
+        harfSec();
+         
+        })();
+         
+        // olayların atanaması
+        kelimeUret.onclick=harfSec;
+         
+        //fonksiyonlar
+         
+        function harfSec()
+        {
+        var sira=Math.round(Math.random()*kelimeler.length);
+        kelime=new String(kelimeler[sira]);
+        kelime=kelime.split("");
+         
+        /*kelime= kelime.map(function(gelen){
+        return gelen+"_";
+        });*/
+         
+        yertutucu(kelime);
+        }
+         
+        //gizli harflerin yerine gösterlicek butonlar
+        function yertutucu(kelime)
+        {
+        var yertutucu=document.getElementById("yertutucu");
+        yertutucu.innerHTML="";
+        daragaci.innerHTML="";
+        tumHarflerAktif();
+        hak=0;
+         
+        for(var i=0;i<kelime.length;i++)
+        {
+        var harf = document.createElement("button");
+        harf.setAttribute("type","button")
+        harf.classList.add("btn", "btn-primary", "bharf");
+        harf.textContent="_";
+        yertutucu.appendChild(harf);
+        }
+        }
+         
+        function harfKontrol(kelime,harf){
+        return kelime.some(x => x ==harf );
+        }
+         
+        function harfYerlestir(kelime,harf){
+        var bharfler= document.querySelectorAll(".bharf");
+        for(sira in kelime)
+        {
+        if(harf==kelime[sira])
+        {
+        bharfler[sira].textContent=harf;
+        }
+        }
+        }
+         
+        function tumHarfleriYaz(kelime)
+        {
+        var bharfler= document.querySelectorAll(".bharf");
+        for(sira in kelime)
+        {
+        harfYerlestir(kelime,kelime[sira]);
+        }
+        }
+         
+        function tumHarflerPasif()
+        {
+        harfler.forEach(function(eleman){
+        eleman.setAttribute("disabled","disabled");
+        });
+         
+        }
+        function tumHarflerAktif()
+        {
+        harfler.forEach(function(eleman){
+        eleman.removeAttribute("disabled");
+        });
+         
+        }
+        function tireKontrol()
+        {
+        var durum= false;
+        var bharfler= document.querySelectorAll(".bharf");
+         
+        for(sira in bharfler)
+        {
+         
+        if(bharfler[sira].textContent=="_")
+        {
+        durum=true;
+        }
+        }
+        return durum;
+         
+        }
+         
+        function harfEkle(harf)
+        {
+        cikanHarf.textContent=cikanHarf.textContent+" "+harf;
+        }
+        </script>
+        </body>
+        </html>
+
+	</div>
+
+
+</body>
+</html>

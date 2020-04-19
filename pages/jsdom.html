@@ -1,0 +1,119 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>İnternet Teknolojileri Dersi</title>
+	<link rel="stylesheet" href="../css/style.css" />
+</head>
+<body onscroll="test()">
+    
+	<div class="ust"> 
+	<h2>Bil3106 Internet Teknolojileri: FrontEnd Development</h2>
+	<p>UZAKTAN EĞİTİM 2. HAFTA</p>
+	</div>
+	
+	
+	<div id="menu"> 
+        <a href="../index.html">JavaScript Giriş</a>
+        <a href="jssyntax.html">JavaScript Yazılım (Syntax) yapısı</a>
+        <a href="degiskenler.html">Değişkenler</a>
+        <a href="operatorler.html">Operatörler</a>
+        <a href="aritmetik.html">Aritmetik</a>
+        <a href="veritipleri.html">Veri Tipleri</a>
+        <a href="fonksiyon.html">Fonsiyon Yapısı</a>
+        <a href="olaylar.html">Olaylar</a>
+        <a href="stringler.html">Stringler, Sayılar, Diziler ve Dizi İşlemleri</a>
+        <a href="ifkosul.html">İf Koşul Yapıları</a>
+        <a href="donguler.html">Döngüler</a>
+        <a href="tipdonusum.html">Tip Dönüşümleri</a>
+        <a href="mimari.html">Çalışma Yapısı ve Genel Mimarisi</a>
+        <a href="fonksiyonkullanimi.html">Fonksiyon Kullanımı</a>
+        <a href="objectmodel.html">JS Object ( Nesne) Modeli ve Kullanımı</a>
+        <a class="aktif" href="jsdom.html">JS DOM Kullanım</a>
+        <a href="hw2_examples/adamasmaca.html">ADAM ASMACA</a>
+        <a href="hw2_examples/kullaniciformu.html">KULLANICI FORMU</a>
+        <a href="hw2_examples/alisverislistesi.html">ALIŞVERİŞ LİSTESİ</a>
+	
+	</div>
+	
+	<div  class="icerik"> 
+        
+                <style>
+			
+                        p.a{
+                        font-style: normal;
+                        font-size: 30px;
+                        color:rgb(218, 23, 23)
+                        }
+                        p.b{
+                        font-style: normal;
+                        font-size: 20px;
+                        color:rgb(52, 19, 173)
+                        }
+                        p.c{
+                        font-style: normal;
+                        font-family: initial;
+                        font-size: 20px;
+                        color:rgb(44, 112, 23)
+                        
+                        }
+                        </style>  
+        <header>
+                <h2><strong>JavaScript DOM (Document Object Model) Kullanımı</strong></h2>
+        </header>
+
+       
+        <a href="#" class="image full"><img src="../images/18.jpg" alt=""></a>
+
+        <p class="b">JavaScript ile web sayfamızdaki etiketlerin ve form elemanlarının içeriklerine-değerlerine ulaşmak, bunlarla işlem yapmak ve değiştirmek isteyebiliriz.</p>
+        <p class="b">Özellikle form elemanlarına ziyaretçiler tarafından girilen bilgilere ulaşmaya sıkça ihtiyaç duyarız. </p>
+        <p class="b">JavaScript'te çeşitli metotlar kullanarak html etiketlerinin içerik ve özelliklerine ulaşabilir ve istersek bu özellikleri değiştirebiliriz. </p>
+        <p class="b">Bu metotlardan bazıları şunlardır. </p>
+        <p class="a"><strong>getElementById Metodu</strong></p>
+        <p class="c">Web sayfasındaki html etiketlerine ulaşmak için en çok kullanılan metotlardan biridir. Ulaşılmak istenen html nesnesinin id'si belirtilerek, ilgili elemana ulaşmamızı sağlar. </p>
+        <p class="c">Örneğin k1 isimli metin kutusunun içindeki değere şu şekilde ulaşabiliriz: </p>
+        <a href="#" class="image full"><img src="../images/08.jpg" alt=""></a>
+        <p class="c">Benzer şekilde istenen elemanın stil özellikleri, innerHtml özelliği gibi birçok özelliğine erişilerek değişiklik yapılabilir </p>
+        <p class="a"><strong>innerHTML Özelliği</strong></p>
+        <p class="b">Body kısmında yer alan bir html etiketinin içeriğini değiştirmemizi sağlar.  </p>
+        <p class="b">Örnek: Sayfamızda id'si "sonuc" olan bir p etiketi bulunsun. Bu etiket içerisine birşeyler yazdırmak istersek şu satırı kullanabiliriz: </p>
+        <a href="#" class="image full"><img src="../images/09.jpg" alt=""></a>
+        <p class="b">innerHTML özelliği ile sayfanın istenen yerine Html kodları da ekleyebilriz. </p>
+        <a href="#" class="image full"><img src="../images/10.jpg" alt=""></a>
+        <p class="b">JavaScript ile sayfaya html kodları eklerken, tırnak işaretlerini karıştırırsak sorun yaşarız. Bu nedenle çift tırnak içerisinde tekrar tırnak işareti kullanmamız gerekirse, içteki tırnak işaretlerini tek tırnak olarak yazmalıyız. </p>
+        <p class="b">Hatırlatma: JavaScript büyük küçük harfe duyarlı bir dildir. Ayrıca html'de olduğu gibi komut satırlarını yazarken her istediğimiz yerde alt satıra geçemeyiz. JavaScript komut satırları nokta (.) ve eşittir (=) gibi karakterlerden sonra bölünebilmekteyken, komutlar, tırnak içleri ve benzeri ifadeler bölünerek alta geçilmemelidir </p>
+        <p class="b"><strong>Örnek:</strong> </p>
+        <a href="#" class="image full"><img src="../images/11.jpg" alt=""></a>
+        <p class="a"><strong>getElementsByClassName Metodu</strong></p>
+        <p class="c"> Id özelliği her etiket için farklı olması gereken bir özelliktir. Bu durumda getElementById metodu ile aynı anda birden fazla elemana ulaşmamız mümkün değildir.</p>
+        <p class="c">Class özelliği ise sayfada bir çok etikete uygulanmış olabilir. Sayfada aynı class'ın uygulandığı tüm elemanlar ile işlem yapmak istersek getElementsByClassName metodunu kullanabiliriz </p>
+        <p class="c">Bu metotta parantez içinde aradığımız class adı yazılır, devamında ise köşeli parantez içerisinde o class'a sahip elemanlar içindeki kaçıncı elemana ulaşacağımız belirtilir. </p>
+        <p class="c"><strong>Örnek : </strong> </p>
+        <a href="#" class="image full"><img src="../images/12.jpg" alt=""></a>
+        <p class="c"> Yukarıdaki satırda .yazi class'ı uygulanmış ilk elemana ulaşılacaktır. İndex numaraları her zaman 0'dan başlar.</p>
+        <p class="c"> Sayfada aynı class'ın uygulandığı tüm elemanlara ulaşmak ve işlem yapmak istersek bir döngü kullanabiliriz.</p>
+        <p class="c"> Örnek: Aşağıdaki örnekte .yazi class'ı uygulanmış tüm elemanların metin rengi değiştirilmiştir.</p>
+        <a href="#" class="image full"><img src="../images/13.jpg" alt=""></a>
+        <p class="a"><strong>getElementsByName Metodu</strong></p>
+        <p class="b">Şayet id'ye göre değil de name özelliğine göre bir html nesnesine ulaşmak istersek getElementsByName metodunu kullanabiliriz. Kullanımı bir üstte anlatılan getElementsByClassName metoduna benzer. Ulaşılmak istenilen elemanın index numarasının da belirtilmesi gerekir. </p>
+        <p class="b"> <strong>Örnek : </strong></p>
+        <a href="#" class="image full"><img src="../images/14.jpg" alt=""></a>
+        <p class="b"> Köşeli parantez içinde belirttiğimiz index numarası, o sayfada belirttiğimiz name özelliğine sahip elemanlardan kaçıncı sıradakinin alınacağını belirtmiş olur. İndeks numarası 0'dan başlar.</p>
+        <p class="b"> Bu örnekte name özelliği "kutu" olan ilk html elemanına ulaşılacaktır.</p>
+        <p class="a"><strong>Form ve Nesne Adları Kullanılarak Form Elemanlarının Değerine Ulaşma</strong></p>
+        <p class="c"> Sayfamızdaki html formu içindeki elemanların değerlerine şu şekilde de ulaşabiliriz.</p>
+        <p class="c"> <strong>Örnek : </strong></p>
+        <p class="c"> Aşağıdaki gibi bir html formumuz olsun:</p>
+        <a href="#" class="image full"><img src="../images/15.jpg" alt=""></a>
+        <p class="b">Formun adı form1, ulaşmak istediğimiz metin kutusunun adı ise kutu1 olduğu için; </p>
+        <a href="#" class="image full"><img src="../images/16.jpg" alt=""></a>
+        <p class="b"> şeklinde kutunun değerine ulaşabiliriz.</p>
+        <p class="a"><strong>Write Metodu</strong></p>
+        <p class="c"> Sayfaya metin ya da Html kodlarını sayfaya yazdırmamızı sağlar.</p>
+        <a href="#" class="image full"><img src="../images/17.jpg" alt=""></a>
+
+	</div>
+
+        <script type="text/javascript" src="../js/ayar.js"></script>
+</body>
+</html>

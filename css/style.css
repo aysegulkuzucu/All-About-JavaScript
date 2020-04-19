@@ -1,0 +1,121 @@
+body {
+	
+	margin:0;
+	font-size:22px;
+	color: rgb(114, 14, 86);	
+	font-family: arial;
+}
+
+.ust {
+	
+	background:rgb(206, 52, 103);
+	padding:30px;
+	text-align:center;
+	color: rgb(255, 255, 255);
+}
+
+#menu {
+	
+	overflow:hidden;
+	background:rgb(15, 143, 194);
+	
+}
+
+#menu a {
+	
+	 display:block;
+	 float:left;
+	 padding:14px 16px;
+	 color:white;
+	 text-decoration:none;
+	 font-size:20px;
+}
+
+#menu a:hover {
+	
+	background:#eee;
+	color:black;
+}
+
+.aktif {
+	
+	background:rgb(245, 89, 128);
+	
+} 
+.yapıskan {
+	
+	top:0;
+	position:fixed;
+	width:100%;
+	
+}
+
+
+.icerik {
+	
+	padding:14px;
+	
+}
+
+
+.yapıskan + .icerik {
+	
+	padding-top:60px;
+	
+}
+
+
+.form-group {
+	color: rgb(0, 47, 255);
+	font-size: 30px;
+}
+
+.btn {
+	color : rgb(226, 168, 190);
+	height: 5rem;
+	font-size: 30px;
+	background-color: rgb(194, 117, 149);
+	size: 15px;
+}
+.adam {
+	font-size: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
