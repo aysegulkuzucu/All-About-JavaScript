@@ -5,6 +5,7 @@ Review Pages : https://aysegulkuzucu.github.io/All-About-JavaScript/
 I have prepared a tutorial for learn Javascript. This tutorial includes:
 
 Hangman (Adam Asmaca)
+
 Shopping List (Alşveriş Listesi)
 User Registration Form (Kullanıcı Kayıt Formu)
 JS Syntax Structure (JS Syntax Yapısı)
